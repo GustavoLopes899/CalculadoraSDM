@@ -14,4 +14,8 @@
     <string name="dois">2</string>
     <string name="tres">3</string>
     <string name="multiplicacao">x</string>
+    <string-array name="tipo_layout">
+        <item>Básico</item>
+        <item>Avançado</item>
+    </string-array>
 </resources>

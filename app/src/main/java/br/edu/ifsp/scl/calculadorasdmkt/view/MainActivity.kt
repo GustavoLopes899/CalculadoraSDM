@@ -1,6 +1,7 @@
 package br.edu.ifsp.scl.calculadorasdmkt.view
 
 import android.os.Bundle
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.ifsp.scl.calculadorasdmkt.R
 import kotlinx.android.synthetic.main.toolbar.*
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
         // Fragment padrão
         supportFragmentManager.beginTransaction()
             .replace(R.id.calculadoraFl, CalculadoraBasicaFragment()).commit()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
     }
 
 }
